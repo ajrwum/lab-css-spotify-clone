@@ -1,8 +1,208 @@
+@import "./_reset.css";
+
 /*
 Colors:
-
+-------
 Text: 1A1A1A
 Green: #00B172
 White: #FFF
-
 */
+
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+  color: #1A1A1A;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  color: #00B172;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/* Section HEADER */
+#header {
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100vw;
+}
+
+#header img {
+  padding: 0 3rem;
+  width: 13rem;
+}
+
+nav ul {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav li {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Section JUMBO */
+#jumbo {
+  background-image: url(./../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+#jumbo .text {
+  padding: 2rem 20vw;
+  text-align: center;
+}
+
+#jumbo p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+/* Section FEATURES */
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+#features h2 {
+  font-weight: 500;
+  text-decoration-color: #00B172;
+}
+
+#features h3 {
+  font-weight: 600;
+}
+
+#features .articles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#features article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+#features img {
+  height: 6.25rem;
+}
+
+#features p {
+  width: 60%;
+}
+
+/* Section SPOTLIGHT */
+#spotlight {
+  background-color: #00B172;
+  color: #fff;
+  margin: 2rem 3rem;
+  padding: 3rem 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#spotlight h3 {
+  color: #fff;
+}
+
+#spotlight .text {
+  width: 50%;
+}
+
+#spotlight .description {
+  width: 70%;
+}
+
+#spotlight p {
+  font-weight: 200;
+  text-align: left;
+}
+
+#spotlight .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#spotlight .icon img {
+  width: 120px;
+}
+
+#spotlight .screenshot img {
+  height: 80vh;
+}
+
+@media (max-width: 640px) {
+  #spotlight .text {
+    width: 100%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .screenshot {
+    display: none;
+  }
+}
+
